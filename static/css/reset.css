@@ -1,0 +1,80 @@
+/* Reset styles for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling for body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0; /* Light background for better readability */
+    color: #333; /* Dark text for contrast */
+}
+
+/* Styling for headings */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal; /* Remove boldness */
+    margin-bottom: 0.5em; /* Space below headings */
+}
+
+/* Remove list styles */
+ul, ol {
+    list-style: none; /* No bullet points */
+}
+
+/* Blockquote reset */
+blockquote {
+    quotes: none; /* Remove default quote styles */
+}
+
+/* Image styles */
+img {
+    max-width: 100%; /* Responsive images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Table styles */
+table {
+    border-collapse: collapse; /* Collapse table borders */
+    width: 100%; /* Full width tables */
+}
+
+/* Button styles */
+button {
+    border: none; /* Remove default border */
+    background: none; /* Remove default background */
+    cursor: pointer; /* Pointer cursor for buttons */
+}
+
+/* Form element reset */
+input, textarea, select {
+    font-family: inherit; /* Inherit font from body */
+    font-size: 1rem; /* Standard font size */
+}
+
+/* Link styles */
+a {
+    text-decoration: none; /* Remove underline */
+    color: #007BFF; /* Standard link color */
+}
+
+/* Responsive design for containers */
+.container {
+    width: 90%; /* 90% width for main containers */
+    max-width: 1200px; /* Max width for larger screens */
+    margin: 0 auto; /* Center container */
+}
+
+/* Flexbox utility for centering */
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Add space between elements */
+.spacing {
+    margin: 20px 0; /* Vertical spacing */
+}

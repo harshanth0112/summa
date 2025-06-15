@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Sales Visualization</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Frequent Itemsets Visualization</h1>
+    <h2>Top Frequent Pairs (2-item combinations):</h2>
+    <table>
+        <tr>
+            <th>Itemsets</th>
+            <th>Support</th>
+        </tr>
+        {% for index, row in pair_itemsets.iterrows() %}
+        <tr>
+            <td>{{ row['itemsets'] }}</td>
+            <td>{{ row['support'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <h2>Top Frequent Itemsets:</h2>
+    <table>
+        <tr>
+            <th>Itemsets</th>
+            <th>Support</th>
+        </tr>
+        {% for index, row in all_top_itemsets.iterrows() %}
+        <tr>
+            <td>{{ row['itemsets'] }}</td>
+            <td>{{ row['support'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/visualize">Visualize Sales Data</a>
+    </nav>
+</body>
+</html>
